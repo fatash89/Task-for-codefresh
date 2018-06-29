@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const ParseController = require('./controllers/parse.controller');
+const UsersSessionsController = require('./controllers/users.sessions.controller');
 
-app.get('/parseUsersSessions', ParseController.parseUsersSessions);
+app.get('/parseUsersSessions', UsersSessionsController.getUsersSessions);
 
 app.use(express.static('public'));
 

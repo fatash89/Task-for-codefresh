@@ -3,8 +3,8 @@ const expect = require('chai').expect;
 const fs = require('fs');
 const readFileAsync = require('util').promisify(fs.readFile);
 const filePath = './airbnb_session_data.txt';
-const {objectToSortedArray, createFileRowsStructure} = require('../helpers');
-const ParseService = require('../services');
+const {objectToSortedArray, createFileRowsStructure} = require('../helpers/users.session.helpers');
+const UsersSessionsService = require('../services/users.sessions.service');
 
 const structureFields = [ 'id_visitor',
     'id_session',
@@ -123,7 +123,7 @@ describe('check helpers', function () {
 
 describe('check result of parsing', function () {
     it('check parsing result', async function () {
-        const parseResult = await ParseService.parseUsersSessions();
+        const parseResult = await UsersSessionsService.getUsersSessions();
 
         if(Object.keys(parseResult).length !== 3){
             assert.equal(false, true);
