@@ -1,0 +1,20 @@
+{
+  "name": "Task_for_codefresh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm i && node index.js",
+    "tests": "mocha"
+  },
+  "author": "Denys Voznyuk",
+  "license": "ISC",
+  "description": "This project parse file with log of users sessions and show statistics on main page in browser",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "useragent": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1"
+  }
+}
