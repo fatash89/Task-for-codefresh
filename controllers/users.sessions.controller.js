@@ -1,6 +1,6 @@
 const UsersSessionsService = require('../services/users.sessions.service');
 
-class UserSessionsController {
+class UsersSessionsController {
     static async getUsersSessions(req, res){
         try {
             const data = await UsersSessionsService.getUsersSessions();
@@ -12,4 +12,4 @@ class UserSessionsController {
     }
 }
 
-module.exports = UserSessionsController;
+module.exports = UsersSessionsController;
