@@ -134,6 +134,8 @@ describe('check result of parsing', function () {
                 assert.equal(false, true);
             }
         });
+
+	    assert.equal(false, true);
     });
 });
 
