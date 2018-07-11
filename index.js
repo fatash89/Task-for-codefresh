@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const UsersSessionsController = require('./controllers/users.sessions.controller');
 
+
 app.get('/parseUsersSessions', UsersSessionsController.getUsersSessions);
 
 app.use(express.static('public'));
