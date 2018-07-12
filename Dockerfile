@@ -21,4 +21,4 @@ EXPOSE 5002
 ENV varName varVal
 
 # CMD - run main command for start app
-CMD [ "npm", "run", "start" ]
+CMD [ "npm", "run", "build" ]
