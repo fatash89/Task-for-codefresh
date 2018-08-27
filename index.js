@@ -3,7 +3,6 @@ const app = express();
 const UsersSessionsController = require('./controllers/users.sessions.controller');
 app.get('/parseUsersSessions', UsersSessionsController.getUsersSessions);
 console.log('12');
-console.log('12');
 app.use(express.static('public'));
 
 /*error handler for log errors*/
