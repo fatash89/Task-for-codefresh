@@ -6,6 +6,7 @@ const filePath = './airbnb_session_data.txt';
 const {objectToSortedArray, createFileRowsStructure} = require('../helpers/users.session.helpers');
 const UsersSessionsService = require('../services/users.sessions.service');
 
+
 const structureFields = [ 'id_visitor',
     'id_session',
     'dim_session_number',
