@@ -1,9 +1,8 @@
 const express = require('express');
 const app = express();
 const UsersSessionsController = require('./controllers/users.sessions.controller');
-
 app.get('/parseUsersSessions', UsersSessionsController.getUsersSessions);
-
+console.log('1');
 app.use(express.static('public'));
 
 /*error handler for log errors*/
