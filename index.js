@@ -4,14 +4,13 @@ const UsersSessionsController = require('./controllers/users.sessions.controller
 app.get('/parseUsersSessions', UsersSessionsController.getUsersSessions);
 console.log('12');
 app.use(express.static('public'));
-
 /*error handler for log errors*/
 app.use(function (err, req, res, next) {
 	console.log(err);
 	next(err);
 });
-
 /*global error handler middleware, must be last middlewae*/
+//
 app.use(function (err, req, res, next) {
 		/*if the headers are already sent to delegate the error to the default handler*/
 		if (res.headersSent) {
