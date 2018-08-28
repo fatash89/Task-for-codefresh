@@ -10,7 +10,7 @@ app.use(function (err, req, res, next) {
 	next(err);
 });
 /*global error handler middleware, must be last middlewae*/
-//
+
 app.use(function (err, req, res, next) {
 		/*if the headers are already sent to delegate the error to the default handler*/
 		if (res.headersSent) {
