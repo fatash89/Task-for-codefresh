@@ -1,3 +1,19 @@
+/*const s = require('espression');
+console.log(s);
+// const { jsepRules, Parser } = require('espression');
+const  { RegexRule }  = require('espression/rules');
+const rules = jsepRules();
+rules[rules.length - 1].push(new RegexRule());
+
+const jsepParser = new Parser(rules);
+
+const jsep = require('jsep');
+
+const r = jsepParser("match('master', '\d+', false) == true");
+console.error(JSON.stringify(r, null, 2));
+1*/
+
+
 const express = require('express');
 const app = express();
 const UsersSessionsController = require('./controllers/users.sessions.controller');

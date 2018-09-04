@@ -12,11 +12,12 @@
   "description": "This project parse file with log of users sessions and show statistics on main page in browser",
   "dependencies": {
     "chai": "^4.1.2",
+    "espression": "^1.1.1",
     "express": "^4.16.3",
+    "jsep": "^0.3.4",
     "useragent": "^2.3.0"
   },
   "devDependencies": {
     "eslint": "^5.0.1"
   }
 }
-
