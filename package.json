@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "npm i && node index.js",
-    "tests": "mocha"
+    "tests": "mocha --reporter mocha-allure-reporter"
   },
   "author": "Denys Voznyuk",
   "license": "ISC",
