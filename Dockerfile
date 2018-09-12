@@ -8,8 +8,7 @@ WORKDIR /var/www/test
 COPY package.json package.json
 
 # RUN - run command for while prepearing environment
-RUN npm install mocha -g
-RUN npm install mocha-allure-reporter -g
+RUN npm install mocha mocha-allure-reporter -g
 
 RUN npm install
 
