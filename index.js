@@ -22,6 +22,7 @@ app.use(function (err, req, res, next) {
 		res.status(500);
 		res.json({ error: err });
 	}
+
 );
 
 app.listen(5002, () => {
