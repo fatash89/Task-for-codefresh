@@ -1,5 +1,5 @@
 # FROM - inherit image
-FROM node:8
+FROM node:16.9
 
 # WORKDIR - set path to work directory
 WORKDIR /var/www/test
