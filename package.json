@@ -12,7 +12,7 @@
   "description": "This project parse file with log of users sessions and show statistics on main page in browser",
   "dependencies": {
     "chai": "^4.1.2",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "useragent": "^2.3.0"
   },
   "devDependencies": {
